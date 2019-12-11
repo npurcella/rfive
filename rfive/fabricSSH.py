@@ -1,5 +1,10 @@
 import os
-from StringIO import StringIO
+#from StringIO import StringIO
+try:
+    from StringIO import StringIO
+except ImportError:
+    from io import StringIO
+    
 import sys
 from fabric.api import env as fenv
 from fabric.api import get as fget
