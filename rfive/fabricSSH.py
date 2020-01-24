@@ -1,5 +1,7 @@
 import os
-from StringIO import StringIO
+#from StringIO import StringIO
+from io import StringIO
+
 import sys
 from fabric.api import env as fenv
 from fabric.api import get as fget
